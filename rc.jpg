@@ -1,0 +1,9 @@
+UseBridges 1
+Log notice file ./tor.log
+ClientTransportPlugin meek exec ./meek-client.exe --log meek-client.log
+Bridge meek 0.0.2.0:2 url=https://domain1test.azureedge.net/ front=ajax.aspnetcdn.com
+Bridge meek 0.0.2.0:3 url=https://torrc.global.ssl.fastly.net/ front=a.ssl.fastly.net
+Bridge meek 0.0.2.0:4 url=https://e6e3b4t7.stackpathcdn.com/ front=www.stackpath.com
+DataDirectory ./Data
+GeoIPFile ./geoip
+GeoIPv6File ./geoip6
